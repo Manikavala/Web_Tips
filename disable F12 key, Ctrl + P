@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).keydown(function(event){
+alert(event.keyCode);
+    if(event.keyCode==123){
+    console(event.keyCode);
+        return false;
+    }
+    else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+             return false;
+    }
+});
+
+$(document).on("contextmenu",function(e){        
+   e.preventDefault();
+});
+
+</script></head><body>
+<h1>Hello !</h1></body>
+</html>
